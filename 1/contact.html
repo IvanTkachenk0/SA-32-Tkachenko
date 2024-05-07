@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel='stylesheet' href='style/style.css'>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Add custom styles here */
+        .contact-form {
+            max-width: 300px;
+            margin: 0 auto;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        fieldset {
+            border: 1px solid #ccc;
+            padding: 20px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #2980b9;
+            font-family: 'Montserrat', sans-serif;
+        }
+    </style>
+    <title>Комп'ютерний клуб - Зворотній зв'язок</title>
+</head>
+
+<body>
+    <header>
+        <!-- Your header content here -->
+    </header>
+
+    <main>
+        <div class="contact-form">
+            <form action="#" method="POST">
+                <fieldset>
+                    <legend>Форма зворотного зв’язку</legend>
+                    <label for="name">Ім'я:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Повідомлення:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <input type="submit" value="Submit">
+                </fieldset>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <!-- Your footer content here -->
+    </footer>
+</body>
+
+</html>

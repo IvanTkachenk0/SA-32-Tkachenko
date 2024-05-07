@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ціни на послуги/товари</title>
+    <style>
+        body {
+            background-image: url('style/Rectangle%206.png') ; /* Задній фон */
+            background-size: cover;
+            -webkit-background-size: cover;
+            background-image: no-repeat;
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .pricing-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 50px;
+            color: #fff;
+        }
+
+        .pricing-card {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            text-align: center;
+            width: 30%;
+            background-color: rgba(0, 0, 0, 0.7); /* Прозорий фон для карток */
+        }
+
+        .pricing-card h3 {
+            color: #fff;
+        }
+
+        .pricing-card .price {
+            font-size: 2rem;
+            margin-top: 10px;
+            color: #ff6600;
+        }
+
+        .pricing-card .features {
+            margin-top: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ff6600;
+            color: #fff;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+
+        .btn:hover {
+            background-color: #cc5500;
+        }
+
+        @media screen and (max-width: 768px) {
+            .pricing-container {
+                flex-wrap: wrap;
+            }
+
+            .pricing-card {
+                width: 90%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="pricing-container">
+        <div class="pricing-card">
+            <h3>Хот-доги</h3>
+            <div class="price">70₴</div>
+            <div class="features">
+                <p>Хот-доги:</p>
+                <ul>
+                    <li>Баварьський</li>
+                    <li>Мисливський</li>
+                    <li>Український</li>
+                </ul>
+            </div>
+            <a href="#" class="btn">Замовити</a>
+        </div>
+        <div class="pricing-card">
+            <h3>Напої</h3>
+            <div class="price">80₴</div>
+            <div class="features">
+                <p>Опис послуг/товарів:</p>
+                <ul>
+                    <li>Мохіто</li>
+                    <li>Моджо</li>
+                    <li>Мілкшейк</li>
+                </ul>
+            </div>
+            <a href="#" class="btn">Замовити</a>
+        </div>
+        <div class="pricing-card">
+            <h3>Бургери</h3>
+            <div class="price">140₴</div>
+            <div class="features">
+                <p>Опис послуг/товарів:</p>
+                <ul>
+                    <li>Гамбургер</li>
+                    <li>Купер Бургер</li>
+                    <li>Фермерський бургер</li>
+                </ul>
+            </div>
+            <a href="#" class="btn">Замовити</a>
+        </div>
+    </div>
+</body>
+</html>
